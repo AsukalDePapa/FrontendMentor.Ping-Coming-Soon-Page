@@ -78,9 +78,6 @@ form {
         display: flex;
         gap: f.rem(16);
 
-        // .input-box {
-        // }
-
         button {
             width: f.rem(300);
             height: f.rem(50);
@@ -94,7 +91,6 @@ form {
 }
 
 .error {
-    width: 70%;
     color: var(--light-red);
     text-align: center;
     // margin: f.rem(5) 0 f.rem(24);

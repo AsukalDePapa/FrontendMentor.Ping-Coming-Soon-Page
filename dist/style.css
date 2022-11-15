@@ -164,7 +164,6 @@ form button:hover {
 }
 
 .error {
-  width: 70%;
   color: var(--light-red);
   text-align: center;
 }
