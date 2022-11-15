@@ -1,0 +1,6 @@
+@use '../utils/functions' as f;
+
+header {
+    padding: f.rem(100) f.rem(16) f.rem(16);
+    margin-bottom: f.rem(32);
+}

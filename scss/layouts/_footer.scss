@@ -1,0 +1,73 @@
+@use '../utils/functions' as f;
+
+footer {
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.socials {
+    margin-bottom: f.rem(16);
+    ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: f.rem(16);
+
+        li {
+
+            a {
+                color: var(--blue);
+                font-size: f.rem(24);
+                border: var(--pale-blue) 1px solid;
+                width: f.rem(50);
+                height: f.rem(50);
+                display: grid;
+                place-content: center;
+                border-radius: 50%;
+
+                &:hover {
+                    background-color: var(--blue);
+                    color: white;
+                }
+                
+            }
+        }
+    }
+}
+
+.attribution { 
+    margin-bottom: f.rem(24);
+    font-size: f.rem(15); 
+    text-align: center; 
+}
+.attribution a { 
+    font-size: f.rem(16);
+    font-weight: 600;
+    color: var(--blue); 
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: 0;
+        height: 3px;
+        background-color: var(--blue); 
+        transition: width .3s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 600;
+    color: var(--gray);
+}
